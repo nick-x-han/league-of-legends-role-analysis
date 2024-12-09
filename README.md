@@ -100,9 +100,10 @@ The following graph shows the distribution of **damageabsorption** before and af
 <iframe
   src="assets/impute.html"
   width="800"
-  height="600"
+  height="400"
   frameborder="0"
 ></iframe>
+
 
 Below is the head of the cleaned dataframe after removing some columns that will no longer be necessary after the Univariate and Bivariate analyses. 
 
@@ -135,7 +136,7 @@ Overall, this plot shows the difference in the roles' ability to obtain kills.
 I performed bivariate analysis on **damagetakenperminute** and **dpm**, separated by **position**. 
 
 <iframe
-  src="assets/gold.html"
+  src="assets/dealt-vs-taken.html"
   width="800"
   height="400"
   frameborder="0"
