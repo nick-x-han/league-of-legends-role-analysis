@@ -122,7 +122,7 @@ I performed univariate analysis on **kills**, separated by **position**.
 <iframe
   src="assets/kills-univariate.html"
   width="800"
-  height="300"
+  height="400"
   frameborder="0"
 ></iframe> 
 We can see that, as expected, supports get very few kills, while bot laners have the largest proportion of high-kill games. This makes sense; bot laners are usually ranged marksmen with auto attacks that not only deal high damage but also have no cooldown or mana cost, so unlike a mid laner mage who can blow up an enemy or two, bot laners are more likely to kill an entire team by themselves if left unchecked, and they're also better at securing kills due to their sustained damage. Mid laners are no slouch either when it comes to kills, however, having more high-kill games than other roles beside bot laner. On the other hand, top laners have a relatively large percentage of 0-kill games, excluding supports. This makes sense because top lane itself is more isolated from the other lanes, which can broadly be chalked up to the vulnerable bot laner being a huge target, more people being in bot lane in general, and Dragon being in the bot-side jungle. Speaking of the jungle, junglers seem to be in the middle of mid laners and top laners in terms of kill potential. 
@@ -135,9 +135,9 @@ Overall, this plot shows the difference in the roles' ability to obtain kills.
 I performed bivariate analysis on **damagetakenperminute** and **dpm**, separated by **position**. 
 
 <iframe
-  src="assets/dealt-vs-taken.html"
+  src="assets/gold.html"
   width="800"
-  height="300"
+  height="400"
   frameborder="0"
 ></iframe> 
 This shows that bot laners and mid laners, especially the former, have high DPS and take little damage, while supports' low gold income prevents them from excelling at either tanking or dealing damage. On the other hand, top laners and junglers both take a lot of damage while overall not dealing as much damage as mid laners or bot laners, demonstrating their higher HP and defenses. 
