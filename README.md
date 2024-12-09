@@ -120,7 +120,7 @@ Below is the head of the cleaned dataframe after removing some columns that will
 I performed univariate analysis on **kills**, separated by **position**. 
 
 <iframe
-  src="assets/gold-univariate.html"
+  src="assets/kills-univariate.html"
   width="800"
   height="600"
   frameborder="0"
