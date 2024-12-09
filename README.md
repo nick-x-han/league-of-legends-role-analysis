@@ -17,37 +17,53 @@ Because each match is a 5v5, it's important that every player contributes their 
 The overarching question I want to answer is: **How do the roles differ in terms of post-match statistics? Are they distinct enough that I can accurately predict which role a player played given their post-match data?** Even though there are 161 features, I'm only interested in 18 of them:
 
 **datacompleteness**
-: Whether this row's data is 'complete' or 'partial'. Relevant for data cleaning. 
+: Whether this row's data is 'complete' or 'partial'. Relevant for data cleaning.
+ 
 **position**
-: The role a player played. 
+: The role a player played.
+ 
 **champion**
 : The champion a player played.
+
 **gamelength**
 : How long the match played by the player lasted in seconds.
+
 **result**
 : Whether the player won the match. 1 means victory, while 0 means defeat.
+
 **kills**
 : How many kills the player had.
+
 **deaths**
 : How many deaths the player had.
+
 **assists**
 : How many assists the player got by contributing to kills.
+
 **teamkills**
 : The total number of kills the player's team had.
+
 **teamdeaths**
 : The total number of deaths the player's team had.
+
 **dpm**
 : How much damage the player dealt per minute to champions.
+
 **damageshare**
 : The percentage of the team's total damage output that the player dealt.
+
 **damagetakenperminute**
 : The amount of damage taken by the player, averaged over number of minutes. 
+
 **damagemitigatedperminute**
 : The amount of damage reduced by the player through armor, magic resist, and shielding, averaged over number of minutes. 
+
 **earnedgold**
 : The amount of gold earned by the player; does not include passively earned gold.
+
 **earnedgoldshare**
-: The percentage of the team's total earned gold that the player earned. 
+: The percentage of the team's total earned gold that the player earned.
+ 
 **total cs**
 : The total amount of minions and monsters killed by the player. 
 
@@ -104,12 +120,11 @@ Below is the head of the cleaned dataframe after removing some columns that will
 I performed univariate analysis on **kills**, separated by **position**. 
 
 <iframe
-  src="assets/kills-univariate.html"
+  src="assets/gold-univariate.html"
   width="800"
   height="600"
   frameborder="0"
-></iframe>
-We can see that, as expected, supports get very few kills, while bot laners have the largest proportion of high-kill games. This makes sense; bot laners are usually ranged marksmen with auto attacks that not only deal high damage but also have no cooldown or mana cost, so unlike a mid laner mage who can blow up an enemy or two, bot laners are more likely to kill an entire team by themselves if left unchecked, and they're also better at securing kills due to their sustained damage. Mid laners are no slouch either when it comes to kills, however, having more high-kill games than other roles beside bot laner. On the other hand, top laners have a relatively large percentage of 0-kill games, excluding supports. This makes sense because top lane itself is more isolated from the other lanes, which can broadly be chalked up to the vulnerable bot laner being a huge target, more people being in bot lane in general, and Dragon being in the bot-side jungle. Speaking of the jungle, junglers seem to be in the middle of mid laners and top laners in terms of kill potential. 
+></iframe> We can see that, as expected, supports get very few kills, while bot laners have the largest proportion of high-kill games. This makes sense; bot laners are usually ranged marksmen with auto attacks that not only deal high damage but also have no cooldown or mana cost, so unlike a mid laner mage who can blow up an enemy or two, bot laners are more likely to kill an entire team by themselves if left unchecked, and they're also better at securing kills due to their sustained damage. Mid laners are no slouch either when it comes to kills, however, having more high-kill games than other roles beside bot laner. On the other hand, top laners have a relatively large percentage of 0-kill games, excluding supports. This makes sense because top lane itself is more isolated from the other lanes, which can broadly be chalked up to the vulnerable bot laner being a huge target, more people being in bot lane in general, and Dragon being in the bot-side jungle. Speaking of the jungle, junglers seem to be in the middle of mid laners and top laners in terms of kill potential. 
 
 Overall, this plot shows the difference in the roles' ability to obtain kills. 
 
